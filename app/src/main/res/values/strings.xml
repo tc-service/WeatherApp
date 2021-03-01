@@ -2,4 +2,11 @@
     <string name="app_name">WeatherApp</string>
     <string name="start">Start Kotlin!</string>
     <string name="press_bt">Нажата кнопка</string>
+    <string name="button_pressed">Покормите кота!</string>
+    <string name="ok">ОК</string>
+    <string name="warning">Важное сообщение!</string>
+    <string name="today">Today</string>
+    <string name="_10_days">10 days</string>
+    <string name="settings">Settings</string>
+    <string name="current_weather">Current weather</string>
 </resources>
