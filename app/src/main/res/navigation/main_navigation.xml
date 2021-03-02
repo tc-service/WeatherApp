@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/currentWeatherFragment4">
+    app:startDestination="@id/currentWeatherFragment">
     <fragment
-        android:id="@+id/currentWeatherFragment4"
+        android:id="@+id/currentWeatherFragment"
         android:name="com.technocopy.weatherapp.view.CurrentWeatherFragment"
         android:label="current_weather_fragment"
         tools:layout="@layout/current_weather_fragment" />
     <fragment
-        android:id="@+id/tenDaysWeatherFragment2"
+        android:id="@+id/tenDaysWeatherFragment"
         android:name="com.technocopy.weatherapp.view.TenDaysWeatherFragment"
         android:label="ten_days_weather_fragment"
         tools:layout="@layout/ten_days_weather_fragment" />
     <fragment
-        android:id="@+id/settingsFragment3"
-        android:name="com.technocopy.weatherapp.view.SettingsFragment"
+        android:id="@+id/settingsFragment"
+        android:name="com.technocopy.weatherapp.view.TenDaysWeatherFragment"
         android:label="settings_fragment"
-        tools:layout="@layout/settings_fragment" />
+        tools:layout="@layout/ten_days_weather_fragment" />
 </navigation>
