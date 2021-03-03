@@ -1,4 +1,4 @@
-package com.technocopy.weatherapp
+package com.technocopy.weatherapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 
