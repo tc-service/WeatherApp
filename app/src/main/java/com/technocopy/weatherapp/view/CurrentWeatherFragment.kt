@@ -19,9 +19,6 @@ class CurrentWeatherFragment : Fragment() {
 
     private var _binding: CurrentWeatherFragmentBinding? = null
     private val binding get() = _binding!!
-
-//    private lateinit var viewModel: MainViewModel
-
     private val viewModel: MainViewModel by lazy { ViewModelProvider(this).get(MainViewModel::class.java) }
 
     private var isDataSetRus: Boolean = true
@@ -51,7 +48,6 @@ class CurrentWeatherFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.mainFragmentRecyclerView.adapter = adapter
         binding.mainFragmentFAB.setOnClickListener { changeWeatherDataSet() }
-//        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         viewModel.getLiveData().observe(viewLifecycleOwner, Observer { renderData(it) })
         viewModel.getWeatherFromLocalSourceRus()
     }
