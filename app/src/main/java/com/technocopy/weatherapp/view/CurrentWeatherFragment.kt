@@ -27,15 +27,10 @@ class CurrentWeatherFragment : Fragment() {
     private var isDataSetRus: Boolean = true
     private val adapter = MainFragmentAdapter(object : OnItemViewClickListener {
         override fun onItemViewClick(weather: Weather) {
-//            val manager = activity?.supportFragmentManager
-//            if (manager != null) {
-//                val bundle = Bundle()
-//                bundle.putParcelable(DetailsFragment.BUNDLE_EXTRA, weather)
-//                manager.beginTransaction()
-//                    .add(R.id.container, DetailsFragment.newInstance(bundle))
+
             activity?.supportFragmentManager?.apply {
                 beginTransaction()
-                    .add(R.id.container, DetailsFragment.newInstance(Bundle().apply {
+                    .add(R.id.nav_host_fragment, DetailsFragment.newInstance(Bundle().apply {
                         putParcelable(DetailsFragment.BUNDLE_EXTRA, weather)
                     }))
                     .addToBackStack("")
